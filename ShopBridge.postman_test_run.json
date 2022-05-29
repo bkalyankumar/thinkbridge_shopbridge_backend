@@ -11,7 +11,7 @@
 		{
 			"id": "5c1d0993-c273-470e-9519-22d75bd2ecc3",
 			"name": "Register user",
-			"url": "http://0.0.0.0:8000/api/v1/auth/register/",
+			"url": "http://0.0.0.0/api/v1/auth/register/",
 			"time": 115,
 			"responseCode": {
 				"code": 201,
@@ -29,7 +29,7 @@
 		{
 			"id": "b71c73e5-a0c4-42d9-8ebf-2c346eb266cf",
 			"name": "Get token",
-			"url": "http://0.0.0.0:8000/api/token/",
+			"url": "http://0.0.0.0/api/token/",
 			"time": 167,
 			"responseCode": {
 				"code": 200,
@@ -47,7 +47,7 @@
 		{
 			"id": "baeddf09-6b92-45a5-90cc-1b52e53bcdb4",
 			"name": "ProductsList",
-			"url": "http://0.0.0.0:8000/api/v1/products/",
+			"url": "http://0.0.0.0/api/v1/products/",
 			"time": 23,
 			"responseCode": {
 				"code": 200,
@@ -65,7 +65,7 @@
 		{
 			"id": "25678d76-aa3d-42ac-99ae-24595af33163",
 			"name": "Product by ID",
-			"url": "http://0.0.0.0:8000/api/v1/products/1/",
+			"url": "http://0.0.0.0/api/v1/products/1/",
 			"time": 24,
 			"responseCode": {
 				"code": 200,
@@ -83,7 +83,7 @@
 		{
 			"id": "7b3764a8-a479-4743-84f1-7dc5f732fe00",
 			"name": "UpdateProduct",
-			"url": "http://0.0.0.0:8000/api/v1/products/1/",
+			"url": "http://0.0.0.0/api/v1/products/1/",
 			"time": 34,
 			"responseCode": {
 				"code": 200,
@@ -101,7 +101,7 @@
 		{
 			"id": "d671c616-cc32-4cfb-a4af-3724fefeb072",
 			"name": "DeleteProduct",
-			"url": "http://0.0.0.0:8000/api/v1/products/2/",
+			"url": "http://0.0.0.0/api/v1/products/2/",
 			"time": 22,
 			"responseCode": {
 				"code": 204,
@@ -119,7 +119,7 @@
 		{
 			"id": "3258d567-4b71-434c-a6d3-0d160ab765a3",
 			"name": "AddProduct",
-			"url": "http://0.0.0.0:8000/api/v1/products/",
+			"url": "http://0.0.0.0/api/v1/products/",
 			"time": 25,
 			"responseCode": {
 				"code": 201,

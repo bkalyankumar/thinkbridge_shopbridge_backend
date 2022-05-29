@@ -3,6 +3,7 @@ version: "3.9"
 services:
   db:
     image: postgres
+    container_name: shopbridge_db_server
     volumes:
       - ./data/db:/var/lib/postgresql/data
     environment:
@@ -11,13 +12,11 @@ services:
       - POSTGRES_PASSWORD=postgres
   web:
     build: .
-    # command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000" 
+    container_name: shopbridge_web_server
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic --noinput && daphne -b 0.0.0.0 -p 8000 shopbridge.asgi:application"
     volumes:
       - ./shopbridge:/code
       - static_volume:/code/staticfiles
-    # ports:
-    #   - "8000:8000"
     expose:
       - 8000
     environment:
@@ -28,7 +27,7 @@ services:
       - db
   nginx:
     build: ./nginx
-    container_name: ng_server
+    container_name: shopbridge_ng_server
     volumes:
       - static_volume:/code/staticfiles
     ports:

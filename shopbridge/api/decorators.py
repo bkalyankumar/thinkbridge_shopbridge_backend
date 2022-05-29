@@ -3,6 +3,7 @@ from rest_framework.views import status
 
 
 def validate_request_data(fn):
+    """Decorator to validate request data"""
     def decorated(*args, **kwargs):
         # args[0] == GenericView Object
         name = args[0].request.data.get("name", "")
