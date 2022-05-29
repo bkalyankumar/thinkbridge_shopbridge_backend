@@ -12,7 +12,7 @@ services:
   web:
     build: .
     # command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000" 
-    command: bash -c "python manage.py makemigrations && python manage.py migrate && daphne -b 0.0.0.0 -p 8000 shopbridge.asgi:application"
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic --noinput && daphne -b 0.0.0.0 -p 8000 shopbridge.asgi:application"
     volumes:
       - ./shopbridge:/code
       - static_volume:/code/staticfiles
